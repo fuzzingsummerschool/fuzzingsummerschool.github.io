@@ -1,212 +1,232 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en"><head>
+<html style="font-size: 16px;" lang="en">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
     <title>Registration</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Registration.css" media="screen">
+    <link rel="stylesheet" href="Registration.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 7.1.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
-    
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "2026 Summer School Website"
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Registration">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en"><header class=" u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-header u-section-row-container" id="sec-b325" style="background-image: none;"><div class="u-section-rows" style="">
-        <div class="u-clearfix u-section-row" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-ec11">
-          <div class="u-clearfix u-sheet u-sheet-1">
-            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-              <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Registration.html#">
-                  <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-                  <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
-                </a>
-              </div>
-              <div class="u-custom-menu u-nav-container">
-                <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.html" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Program.html" style="padding: 10px 20px;">Program</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Registration.html" style="padding: 10px 20px;">Registration</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Past-Editions.html" style="padding: 10px 20px;">Past Editions</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 20px;">Contact</a>
-</li></ul>
-              </div>
-              <div class="u-custom-menu u-nav-container-collapse">
-                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-                  <div class="u-inner-container-layout u-sidenav-overflow">
-                    <div class="u-menu-close"></div>
-                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Program.html">Program</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Registration.html">Registration</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Past-Editions.html">Past Editions</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
-</li></ul>
-                  </div>
-                </div>
-                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-              </div>
-            </nav>
-            <img class="custom-expanded u-image u-image-default u-image-1" src="images/image.png" alt="" data-image-width="644" data-image-height="115">
-            <p class="u-text u-text-default u-text-1">Fuzzing and Software Security Summer School</p>
-          </div>
-          
-          
-          
-          
-          
+    <style>
+        /* Custom styles to match other pages and fix alignment */
+        
+        /* Header Layout */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        .logo-img {
+            max-width: 300px;
+            height: auto;
+        }
+        .header-text {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        /* Content Styling */
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #478ac9;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #478ac9;
+            display: inline-block;
+        }
+        .content-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Table Styling */
+        .fees-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .fees-table th, .fees-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        .fees-table th {
+            background-color: #f8f9fa;
+            font-weight: 700;
+        }
+        .fees-table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        /* FAQ Styling */
+        .faq-item {
+            margin-bottom: 30px;
+        }
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .faq-answer {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        @media (max-width: 767px) {
+            .logo-img {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-header" id="sec-b325" style="background-color: white; border-bottom: 1px solid #eee;">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="header-container">
+                <img class="logo-img" src="images/image.png" alt="NUS Computing Logo">
+                <p class="header-text">Fuzzing and Software Security Summer School</p>
+                
+                <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+                    <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                        <a class="u-button-style u-nav-link" href="#">
+                            <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+                            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></g></svg>
+                        </a>
+                    </div>
+                    <div class="u-custom-menu u-nav-container">
+                        <ul class="u-nav u-unstyled u-nav-1">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html" style="padding: 10px 15px;">Home</a></li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Program.html" style="padding: 10px 15px;">Program</a></li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Registration.html" style="padding: 10px 15px;">Registration</a></li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Past-Editions.html" style="padding: 10px 15px;">Past Editions</a></li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html" style="padding: 10px 15px;">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-        <div class="u-section-row" id="sec-2e0c">
-          <div class="u-clearfix u-image u-sheet u-image-2" data-image-width="1578" data-image-height="329"></div>
-          
-          
-          
-          
-          
-        </div>
-      </div></header>
+    </header>
+
     <section class="u-clearfix u-section-1" id="sec-eaab">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-text u-text-default u-text-1">Registration<br>
-        </h3>
-        <p class="u-text u-text-2"> Application results have been released via email notification to all applicants.<br>For successful applicants, the acceptance and payment deadline will be on 17 April 2026.&nbsp;
-        </p>
-      </div>
-    </section>
-    <section class="u-clearfix u-section-2" id="sec-c1f2">
-      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
-        <h3 class="u-text u-text-default u-text-1">Fees</h3>
-        <div class="u-table u-table-responsive u-table-1">
-          <table class="u-table-entity">
-            <colgroup>
-              <col width="21.9%">
-              <col width="18.4%">
-              <col width="59.7%">
-            </colgroup>
-            <tbody class="u-table-body">
-              <tr style="height: 44px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-1">Category</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-2">Fees after 9% GST&nbsp;</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell u-table-cell-3">Details</td>
-              </tr>
-              <tr style="height: 67px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Local Student</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">$218</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Refers to student currently enrolled at a local university/ polytechnic that is under the purview of
-     the Ministry of Education (MOE).&nbsp;</td>
-              </tr>
-              <tr style="height: 67px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Singapore Government Agencies</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">$436</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Refers to staff currently employed by Singapore Ministries, Statutory Boards and Organs of State</td>
-              </tr>
-              <tr style="height: 67px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Others</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">$763</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Fees payable by participant not under Local Student and Singapore Government Agencies Category</td>
-              </tr>
-              <tr style="height: 0px;"></tr>
-            </tbody>
-          </table>
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h2 class="section-title">Registration</h2>
+            <p class="content-text" style="padding: 20px; background-color: #eef7ff; border-radius: 8px; border-left: 5px solid #478ac9;">
+                Application results have been released via email notification to all applicants.<br>
+                For successful applicants, the <strong>acceptance and payment deadline will be on 17 April 2026</strong>.
+            </p>
         </div>
-        <p class="u-text u-text-default u-text-2">
-          <span style="text-decoration: underline !important;">Note</span>
-          <br>1) ​Accommodation, if required, shall be self-arranged by the
-participant. The fees paid above <span style="font-weight: 700;">will no</span>
-          <span style="font-weight: 700;">t</span> cover accommodation.<br>2) The Registration fee covers the entire 5 day program
-including lunches, teas, social event and banquet dinner. 
-        </p>
-      </div>
     </section>
-    <section class="u-clearfix u-section-3" id="sec-e0ca">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-text u-text-default u-text-1">Frequently Asked Questions<br>
-        </h3>
-        <p class="u-text u-text-default u-text-2"><b>1) When and where will the Fuzzing and Software Security Summer School 2026 take place?</b>
-          <br>
-          <br><b style="">
-            <span style="font-weight: 400;">The Summer School will be hosted by the <a href="https://www.comp.nus.edu.sg/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">School of Computing</a> at the <a href="https://nus.edu.sg/" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">National University of Singapore</a>.&nbsp; The school will be held from 25 to 29 May 2026.
-            </span></b>
-          <br>
-          <br><b>2) Who is eligible to participate in the summer school?</b>
-          <br>
-          <br><b style="">
-            <span style="font-weight: 400;">The school is open to students, postdocs, faculty, and industry practitioners who are interested in software security and fuzz testing.&nbsp;</span>
-            <span style="font-weight: 400;">Both local and international applications are welcome.&nbsp; Some background in software security or software testing will aid your application. Generally the audience is mixed.&nbsp;</span></b>
-          <br>
-          <br><b>3) What is the focus of the summer school?</b>
-          <br>
-          <br><b>
-            <span style="font-weight: 400;">The general focus of the summer school is software testing (fuzzing) and security.&nbsp; The school will feature instruction from five International experts in the area of fuzz testing, both from academia and industry.</span>&nbsp;<span style="font-weight: 400;">Students are expected to gain insights and knowledge in the latest trends and technologies related to fuzzing and software security in general. Hands-on exercises will be provided in this edition of the summer school.</span></b>
-          <br>
-          <br><b>4) Can industry professionals attend the summer school?</b>
-          <br>
-          <br><b>
-            <span style="font-weight: 400;">Yes, the school is open to both current students and industry professionals.</span></b>
-          <br>
-          <br><b>5) How can I register for the Fuzzing and Software Security Summer School?</b>
-          <br>
-          <br><b>
-            <span style="font-weight: 400;">The registration portal is expected to open in Mid-Jan 2025.&nbsp; If there are any technical problems, please contact <a href="mailto:fuzzing@nus.edu.sg" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">fuzzing@nus.edu.sg</a>.
-            </span></b>
-          <br>
-          <br><b>6) What are the registration fees for the summer school?</b>
-          <br>
-          <br><b>
-            <span style="font-weight: 400;">Please visit the <a href="Registration.html" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">registration page</a> for the fee schedule.&nbsp; Discounts are available for local (Singaporean) students and government agencies.
-            </span></b>
-          <br>
-          <br><b>7) Is accommodation provided as part of the registration fee?<br>
-            <br>
-            <span style="font-weight: 400;">Accommodation is not provided as part of the package.Please also note that the Fuzzing Summer School organizers will not be involved in arranging accommodation for participants. We are providing the information in the following paragraph for the benefit of attendees but we will not be able to help individual (or subsets of) attendees in arranging their accommodation.</span>
-            <br>
-            <br>
-            <span style="font-weight: 400;">You may refer to our Office of Students Affairs <a href="https://nus.edu.sg/osa/student-services/hostel-admission/other-accommodation" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-5">website</a> for resources on other accommodation available to you for your consideration. Do note that the information and external contacts provided is compiled in good faith,and is intended as a guide only. NUS does not endorse, guarantee, warrant or recommend the accuracy of the information or necessarily subscribe to any such opinions or recommendations. NUS, or the<span style="font-weight: 700;">
-                <span style="font-weight: 400;">&nbsp;organizing team, do not profit in any way or sponsor any of the contacts listed.</span>
-                <span style="font-weight: 400;">They are provided as a convenience to you.</span>
-              </span>
-            </span>
-            <br>
-            <br>8) What about visa arrangements for international attendees?<br>
-            <br>
-            <span style="font-weight: 400;">Visa letters may be requested by selected attendees at <a href="mailto:fuzzing@nus.edu.sg" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-6">fuzzing@nus.edu.sg</a>&nbsp; The organizers will not be able to help with the visa applications in any way, beyond providing the letter. Attendees may email us on this, only after they are selected for the summer school.
-            </span>
-            <br>
-            <br>9) What does the registration fee cover?<br>
-            <br>
-            <span style="font-weight: 400;">The fee covers the entire 5 day programme, and includes lunch, tea breaks, social events and a banquet dinner.</span>
-            <br>
-            <br>10) Is there any financial support or scholarships available for participants?<br>
-            <br>
-            <span style="font-weight: 400;">At this point we do not have such arrangements.&nbsp;</span>
-            <br>
-            <br>11) Can I get insights into the networking opportunities at the summer school?<br>
-            <br>
-            <span style="font-weight: 400;">G</span>
-            <span style="font-weight: 400;">enerally we expect a good mix of attendees, including both students and industry professionals. The speakers of the summer school as well as the organizing team are established researchers in the field with a high research footprint.</span>
-            <span style="font-weight: 400;">Therefore, attending the summer school can be very beneficial for networking and future research connections, apart from knowledge in software security.&nbsp;</span></b>
-        </p>
-      </div>
+
+    <section class="u-clearfix u-section-2" id="sec-c1f2">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h2 class="section-title">Fees</h2>
+            <table class="fees-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Category</th>
+                        <th style="width: 20%;">Fees (after 9% GST)</th>
+                        <th style="width: 55%;">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Local Student</td>
+                        <td>$218</td>
+                        <td>Refers to student currently enrolled at a local university/polytechnic that is under the purview of the Ministry of Education (MOE).</td>
+                    </tr>
+                    <tr>
+                        <td>Singapore Government Agencies</td>
+                        <td>$436</td>
+                        <td>Refers to staff currently employed by Singapore Ministries, Statutory Boards and Organs of State.</td>
+                    </tr>
+                    <tr>
+                        <td>Others</td>
+                        <td>$763</td>
+                        <td>Fees payable by participants not under Local Student and Singapore Government Agencies Category.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="content-text">
+                <strong>Note:</strong><br>
+                1) Accommodation, if required, shall be self-arranged by the participant. The fees paid above <strong>will not</strong> cover accommodation.<br>
+                2) The Registration fee covers the entire 5-day program including lunches, teas, social event and banquet dinner.
+            </p>
+        </div>
     </section>
-    
-    
-    
-    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="sec-3362"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1"> Copyright @2025 – All Right Reserved,&nbsp;<b>Trustworthy and Secure Software (TSS)</b>&nbsp;Group @ NUS.
-        </p>
-      </div></footer>
-  
-</body></html>
+
+    <section class="u-clearfix u-section-3" id="sec-e0ca" style="margin-bottom: 60px;">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <span class="faq-question">1) When and where will the Fuzzing and Software Security Summer School 2026 take place?</span>
+                <p class="faq-answer">
+                    The Summer School will be hosted by the <a href="https://www.comp.nus.edu.sg/" target="_blank">School of Computing</a> at the <a href="https://nus.edu.sg/" target="_blank">National University of Singapore</a>. The school will be held from 25 to 29 May 2026.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <span class="faq-question">2) Who is eligible to participate in the summer school?</span>
+                <p class="faq-answer">
+                    The school is open to students, postdocs, faculty, and industry practitioners who are interested in software security and fuzz testing. Both local and international applications are welcome. Some background in software security or software testing will aid your application.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <span class="faq-question">3) What is the focus of the summer school?</span>
+                <p class="faq-answer">
+                    The general focus is software testing (fuzzing) and security. The school will feature instruction from five international experts from both academia and industry. Students will gain insights into the latest trends and technologies, with hands-on exercises provided.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <span class="faq-question">4) Can industry professionals attend the summer school?</span>
+                <p class="faq-answer">
+                    Yes, the school is open to both current students and industry professionals.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <span class="faq-question">5) How can I register for the Fuzzing and Software Security Summer School?</span>
+                <p class="faq-answer">
+                    The registration portal is expected to open in Mid-Jan 2025. If there are any technical problems, please contact <a href="mailto:fuzzing@nus.edu.sg">fuzzing@nus.edu.sg</a>.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <span class="faq-question">6) What are the registration fees for the summer school?</span>
+                <p class="faq-answer">
+                    Please refer to the <a href="Registration.html">fees table</a> above for the schedule. Discounts are available for local (Singaporean) students and government agencies.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <span class="faq-question">7) Is accommodation provided as part of the registration fee?</span>
+                <p class="faq-answer">
+                    Accommodation is not provided. Participants are responsible for arranging their own stay. The organizers will not be involved in arranging accommodation but may provide general information for the benefit of attendees.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80" id="sec-3362" style="padding: 30px 0;">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1">
+                Copyright @2025 – All Right Reserved, <b>Trustworthy and Secure Software (TSS)</b> Group @ NUS.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

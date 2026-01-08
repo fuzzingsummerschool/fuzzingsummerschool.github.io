@@ -11,16 +11,53 @@
     <meta name="generator" content="Nicepage 7.1.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <style>
-        /* Custom styles to fix alignment issues */
-        .speaker-grid {
+        /* Custom styles to fix alignment and layout issues */
+        
+        /* Fix Logo Size and Header Layout */
+        .header-container {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
         }
+        .logo-img {
+            max-width: 300px; /* Reduced size to prevent overlapping */
+            height: auto;
+        }
+        .header-text {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        /* Speaker Grid - 3 per row */
+        .speaker-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+            gap: 40px;
+            margin-top: 40px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @media (max-width: 991px) {
+            .speaker-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .speaker-grid {
+                grid-template-columns: 1fr; /* 1 per row on mobile */
+            }
+            .logo-img {
+                max-width: 200px;
+            }
+        }
+
         .speaker-card {
-            width: 220px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -32,7 +69,7 @@
             object-fit: cover;
             margin-bottom: 15px;
             border-radius: 4px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: transform 0.2s;
         }
         .speaker-card img:hover {
@@ -46,45 +83,45 @@
             font-weight: 700;
             display: block;
             margin-bottom: 5px;
+            font-size: 1.1rem;
         }
         .speaker-title {
             display: block;
-            color: #555;
+            color: #444;
         }
     </style>
 </head>
 <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
-    <header class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-header u-section-row-container" id="sec-b325">
-        <div class="u-section-rows">
-            <div class="u-clearfix u-section-row" id="sec-ec11">
-                <div class="u-clearfix u-sheet u-sheet-1">
-                    <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-                        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-                            <a class="u-button-style u-nav-link" href="#">
-                                <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
-                                <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></g></svg>
-                            </a>
-                        </div>
-                        <div class="u-custom-menu u-nav-container">
-                            <ul class="u-nav u-unstyled u-nav-1">
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html" style="padding: 10px 20px;">Home</a></li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Program.html" style="padding: 10px 20px;">Program</a></li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Registration.html" style="padding: 10px 20px;">Registration</a></li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Past-Editions.html" style="padding: 10px 20px;">Past Editions</a></li>
-                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html" style="padding: 10px 20px;">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <img class="custom-expanded u-image u-image-default u-image-1" src="images/image.png" alt="" style="width: 644px; height: 115px;">
-                    <p class="u-text u-text-default u-text-1">Fuzzing and Software Security Summer School</p>
-                </div>
+    <header class="u-clearfix u-header" id="sec-b325" style="background-color: white; border-bottom: 1px solid #eee;">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="header-container">
+                <img class="logo-img" src="images/image.png" alt="NUS Computing Logo">
+                <p class="header-text">Fuzzing and Software Security Summer School</p>
+                
+                <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+                    <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                        <a class="u-button-style u-nav-link" href="#">
+                            <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+                            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></g></svg>
+                        </a>
+                    </div>
+                    <div class="u-custom-menu u-nav-container">
+                        <ul class="u-nav u-unstyled u-nav-1">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html" style="padding: 10px 15px;">Home</a></li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Program.html" style="padding: 10px 15px;">Program</a></li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Registration.html" style="padding: 10px 15px;">Registration</a></li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Past-Editions.html" style="padding: 10px 15px;">Past Editions</a></li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html" style="padding: 10px 15px;">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
 
     <section class="u-clearfix u-section-1" id="sec-85c8">
         <div class="u-clearfix u-sheet u-sheet-1">
-            <p class="u-text u-text-default u-text-1" style="font-size: 2rem; margin-bottom: 20px;">Guest Speakers</p>
+            <p class="u-text u-text-default u-text-1" style="font-size: 2.5rem; margin-top: 40px; margin-bottom: 10px; text-align: center; font-weight: 300;">Guest Speakers</p>
             
             <div class="speaker-grid">
                 <!-- Row 1 -->
@@ -152,32 +189,31 @@
         </div>
     </section>
 
-    <section class="u-clearfix u-section-2" id="sec-0936">
+    <section class="u-clearfix u-section-2" id="sec-0936" style="margin-top: 60px;">
         <div class="u-clearfix u-sheet u-sheet-1">
-            <p class="u-align-left u-text u-text-1" style="font-weight: 700; font-size: 1.5rem;">Venue</p>
-            <p class="u-align-left u-text u-text-2">
+            <p class="u-align-left u-text u-text-1" style="font-weight: 700; font-size: 1.8rem; border-bottom: 2px solid #478ac9; display: inline-block; margin-bottom: 20px;">Venue</p>
+            <p class="u-align-left u-text u-text-2" style="font-size: 1.1rem; line-height: 1.6;">
                 National University of Singapore<br>
                 Computing 1, 13 Computing Drive<br>
                 COM1-02-13, Video Conference Room<br>
                 Singapore 117417
             </p>
-            <div class="u-expanded-width u-grey-light-2 u-map u-map-1" style="height: 400px; margin-top: 20px;">
+            <div class="u-expanded-width u-grey-light-2 u-map u-map-1" style="height: 450px; margin-top: 30px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                 <iframe class="embed-responsive-item" style="width: 100%; height: 100%; border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7994939779283!2d103.77110287585677!3d1.294852798692847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1af8c7e4e75b%3A0x436963e22924394a!2sNUS%20School%20of%20Computing%2C%20COM1!5e0!3m2!1sen!2ssg!4v1741745331995!5m2!1sen!2ssg"></iframe>
             </div>
         </div>
     </section>
 
-    <section class="u-align-center u-clearfix u-section-3" id="sec-5e14">
+    <section class="u-align-center u-clearfix u-section-3" id="sec-5e14" style="margin-top: 60px; margin-bottom: 60px;">
         <div class="u-clearfix u-sheet u-sheet-1">
-            <p class="u-align-left u-text u-text-1" style="font-weight: 700; font-size: 1.5rem;">Program Details</p>
-            <p class="u-align-left u-text u-text-2">
-                The current program details can be found via the link 
-                <a href="https://docs.google.com/spreadsheets/d/1_T95ZfStUoJ6bBFMYeoYsncGboNhTXED/edit?usp=drive_link&ouid=105518318895322514399&rtpof=true&sd=true" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">here</a>
+            <p class="u-align-left u-text u-text-1" style="font-weight: 700; font-size: 1.8rem; border-bottom: 2px solid #478ac9; display: inline-block; margin-bottom: 20px;">Program Details</p>
+            <p class="u-align-left u-text u-text-2" style="font-size: 1.1rem;">
+                Details will be shared closer to the event date.
             </p>
         </div>
     </section>
 
-    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80" id="sec-3362">
+    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80" id="sec-3362" style="padding: 30px 0;">
         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
             <p class="u-small-text u-text u-text-variant u-text-1">
                 Copyright @2025 – All Right Reserved, <b>Trustworthy and Secure Software (TSS)</b> Group @ NUS.
@@ -186,4 +222,6 @@
     </footer>
 </body>
 </html>
+
+
 

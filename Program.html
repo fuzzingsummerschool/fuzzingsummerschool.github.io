@@ -22,7 +22,7 @@
             flex-wrap: wrap;
         }
         .logo-img {
-            max-width: 300px; /* Reduced size to prevent overlapping */
+            max-width: 300px;
             height: auto;
         }
         .header-text {
@@ -34,7 +34,7 @@
         /* Speaker Grid - 3 per row */
         .speaker-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+            grid-template-columns: repeat(3, 1fr);
             gap: 40px;
             margin-top: 40px;
             max-width: 1000px;
@@ -44,13 +44,13 @@
         
         @media (max-width: 991px) {
             .speaker-grid {
-                grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+                grid-template-columns: repeat(2, 1fr);
             }
         }
         
         @media (max-width: 767px) {
             .speaker-grid {
-                grid-template-columns: 1fr; /* 1 per row on mobile */
+                grid-template-columns: 1fr;
             }
             .logo-img {
                 max-width: 200px;
@@ -89,6 +89,82 @@
             display: block;
             color: #444;
         }
+
+        /* Programme Table Styles */
+        .programme-wrapper {
+            margin-top: 10px;
+        }
+        .programme-day-header {
+            font-family: 'Roboto', 'Open Sans', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #478ac9;
+            padding: 10px 16px;
+            margin-top: 30px;
+            margin-bottom: 0;
+            border-radius: 4px 4px 0 0;
+        }
+        .programme-day-header.break-day {
+            background-color: #888;
+            font-style: italic;
+        }
+        .programme-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Roboto', 'Open Sans', sans-serif;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+        .programme-table thead tr {
+            background-color: #e8f0f9;
+        }
+        .programme-table thead th {
+            padding: 10px 16px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #333;
+            border: 1px solid #d0dce8;
+            text-align: left;
+        }
+        .programme-table tbody tr {
+            border: 1px solid #d0dce8;
+        }
+        .programme-table tbody tr:nth-child(even) {
+            background-color: #f7fafd;
+        }
+        .programme-table tbody tr:hover {
+            background-color: #eef4fb;
+        }
+        .programme-table td {
+            padding: 10px 16px;
+            border: 1px solid #d0dce8;
+            vertical-align: top;
+            line-height: 1.55;
+            color: #222;
+        }
+        .programme-table td.time-col {
+            white-space: nowrap;
+            font-weight: 500;
+            color: #478ac9;
+            width: 170px;
+        }
+        .programme-table td .activity-main {
+            font-weight: 600;
+        }
+        .programme-table td .activity-detail {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 2px;
+        }
+        .programme-table tr.break-row td {
+            background-color: #f0f0f0;
+            color: #666;
+            font-style: italic;
+        }
+        .programme-table tr.social-row td {
+            background-color: #fdf6ec;
+        }
     </style>
 </head>
 <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
@@ -121,9 +197,9 @@
 
     <section class="u-clearfix u-section-1" id="sec-85c8">
         <div class="u-clearfix u-sheet u-sheet-1">
-<p class="u-text u-text-default u-text-1" style="font-size: 2.5rem; margin-top: 40px; margin-bottom: 10px; text-align: center; font-weight: 300;">Guest Speakers</p>
+            <p class="u-text u-text-default u-text-1" style="font-size: 2.5rem; margin-top: 40px; margin-bottom: 10px; text-align: center; font-weight: 300;">Guest Speakers</p>
             
-<div class="speaker-grid">
+            <div class="speaker-grid">
                 <!-- Row 1 -->
                 <div class="speaker-card">
                     <a href=https://people.inf.ethz.ch/suz/ target="_blank">
@@ -207,18 +283,76 @@
     <section class="u-align-center u-clearfix u-section-3" id="sec-5e14" style="margin-top: 60px; margin-bottom: 60px;">
         <div class="u-clearfix u-sheet u-sheet-1">
             <p class="u-align-left u-text u-text-1" style="font-weight: 700; font-size: 1.8rem; border-bottom: 2px solid #478ac9; display: inline-block; margin-bottom: 20px;">Program Details</p>
-            <p class="u-align-left u-text u-text-2" style="font-size: 1.1rem;">
-                Details will be shared closer to the event date.
+            <p class="u-align-left u-text u-text-2" style="font-size: 1rem; color: #555; margin-bottom: 24px; font-style: italic;">
+                Tentative Programme — details subject to change closer to the event date.
             </p>
-        </div>
-    </section>
 
-    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80" id="sec-3362" style="padding: 30px 0;">
-        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-            <p class="u-small-text u-text u-text-variant u-text-1">
-                Copyright @2025 – All Right Reserved, <b>Trustworthy and Secure Software (TSS)</b> Group @ NUS.
-            </p>
-        </div>
-    </footer>
-</body>
-</html>
+            <div class="programme-wrapper">
+
+                <!-- Monday 25 May 2026 -->
+                <div class="programme-day-header">Monday &ndash; 25 May 2026</div>
+                <table class="programme-table">
+                    <thead>
+                        <tr>
+                            <th style="width:170px;">Time</th>
+                            <th>Activities</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time-col">8:30am – 9:15am</td>
+                            <td><span class="activity-main">Registration</span></td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">9:30am – 10am</td>
+                            <td><span class="activity-main">Welcome Speech</span><div class="activity-detail">Prof. Abhik Roychoudhury</div></td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">10am – 11am</td>
+                            <td>
+                                <span class="activity-main">Keynote Speech</span>
+                                <div class="activity-detail">Prof. Su Zhendong<br>Department of Computer Science, ETH Zurich</div>
+                            </td>
+                        </tr>
+                        <tr class="break-row">
+                            <td class="time-col">11am – 11:30am</td>
+                            <td>Tea Break</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">11:30am – 12:30pm</td>
+                            <td><span class="activity-main">Hackathon Announcement &amp; Team Formation and Rules</span></td>
+                        </tr>
+                        <tr class="break-row">
+                            <td class="time-col">12:30pm – 2pm</td>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">2pm – 3pm</td>
+                            <td>
+                                <span class="activity-main">Lecture</span>
+                                <div class="activity-detail">Prof. Cristian Cadar<br>Department of Computing, Imperial College London</div>
+                            </td>
+                        </tr>
+                        <tr class="break-row">
+                            <td class="time-col">3pm – 3:30pm</td>
+                            <td>Tea Break</td>
+                        </tr>
+                        <tr>
+                            <td class="time-col">3:30pm – 5pm</td>
+                            <td>
+                                <span class="activity-main">Lecture</span>
+                                <div class="activity-detail">Prof. Cristian Cadar<br>Department of Computing, Imperial College London</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Tuesday 26 May 2026 -->
+                <div class="programme-day-header" style="margin-top:30px;">Tuesday &ndash; 26 May 2026</div>
+                <table class="programme-table">
+                    <thead>
+                        <tr>
+                            <th style="width:170px;">Time</th>
+                            <th>Activities</th>
+                        </tr>
+                    </thead>
